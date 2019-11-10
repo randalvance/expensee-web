@@ -1,6 +1,10 @@
 {
-  "extends": ["airbnb"],
-  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "parser": "@typescript-eslint/parser",
   "globals": {
     "document": "readonly",
@@ -10,8 +14,14 @@
   "rules": {
     "import/no-unresolved": 0,
     "import/prefer-default-export": 0,
-    "react/jsx-filename-extension": [1, {
-      "extensions": [".jsx", ".tsx"]
-    }]
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ]
   }
 }
