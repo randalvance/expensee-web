@@ -1,18 +1,27 @@
 import React from 'react';
 import {
-  Button, Col, Container, Row,
+  Navbar,
+  Nav,
+  Container,
+  Button,
+  Jumbotron,
 } from 'react-bootstrap';
 
 const App: React.FC = () => (
   <div className="App">
-    <Container fluid>
-      <Row>
-        <Col>Col 1</Col>
-        <Col>Col 2</Col>
-      </Row>
-      <Row>
-        <Col><Button>Test</Button></Col>
-      </Row>
+    <Navbar bg="primary" expand="lg">
+      <Navbar.Brand href="#home">ExpenSee</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+    <Container className="mt-3">
+      <Jumbotron>
+        <h1>ExpenSee</h1>
+      </Jumbotron>
     </Container>
   </div>
 );
