@@ -1,3 +1,3 @@
 export * from './BudgetsPage';
-export * from './ExpensesPage';
+export * from '../components/features/expenses/pages/ExpensesPage';
 export * from './HomePage';
